@@ -1,5 +1,12 @@
 ---
-
+const str ="Bob"
+const num = 1
+const obj = {
+	name: str,
+	number: num,
+	favourites: ["astro", "css", "js"]
+}
+const isVisable = false;
 ---
 
 <html lang="en">
@@ -11,6 +18,8 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		{isVisable 
+		? <h1>{obj.favourites[1].toUpperCase()}</h1>
+		: <h1>{obj.favourites[1].toUpperCase()}</h1>}
 	</body>
 </html>
